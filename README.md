@@ -38,6 +38,13 @@ Directory for active wallpaper files.
 - **`kitty.conf`** - Terminal settings, fonts, keybindings
 - **`colors.conf`** - Color scheme configuration
 - **`colors-kitty.conf`** - Kitty-specific color overrides
+  #### To play The Greatest Technicain That Ever Lived sound put this code in ~/.zshrc or ~./bashrc
+  ```
+  if [[ -z "$KITTY_SOUND_PLAYED" ]]; then
+      export KITTY_SOUND_PLAYED=1
+      ~/.config/hypr/scripts/kitty-tgttel-sound.sh
+  fi
+  ```
 
 #### `nvim/` - Neovim Text Editor
 Modern Neovim configuration with LSP, completion, and plugin management.
@@ -113,13 +120,9 @@ Dynamic color palette generation from wallpapers using Wallust.
 ### System Information
 
 #### `fastfetch/` - System Information Display
-Fast system info fetcher (like neovisfetch but faster).
+Fast system info fetcher.
 - **`config.jsonc`** - Main fastfetch configuration
-- **`config_zerotwo.jsonc`** - Zero Two theme variant
-- **`config_zerotwo1.jsonc`** - Alternative Zero Two variant
-- **`assets/`** - ASCII art and images
-  - `ascii.txt` - Custom ASCII art
-  - `zerotwo.png`, `zerotwo2.png` - Theme images
+- **`assets/`** - images
 
 ---
 
@@ -150,8 +153,8 @@ Ensure you have installed:
 #### Clone the repository:
 ```bash
 mkdir ~/.config/hypr-dotfiles
-git clone https://github.com/kartik317/the-greatest-technician-that-ever-lived-hyprland-rice ~/.config/hypr-dotfiles
-cd ~/.config/hypr-dotfiles
+git clone https://github.com/kartik317/the-greatest-technician-that-ever-lived-hyprland-rice ~/.config/hyprland-dotfiles
+cd ~/.config/hyprland-dotfiles
 ```
 
 #### Symlink configurations:
@@ -183,8 +186,15 @@ ln -sf ~/.config/hyprland-dotfiles/wallust ~/.config/wallust
 
 # Fastfetch
 ln -sf ~/.config/hyprland-dotfiles/fastfetch ~/.config/fastfetch
+
+# The Greatest Technician That Ever Lived Script 
+chmod +x ~/.config/hyprland-dotfiles/technician.sh
+chmod +x ~/.config/hyprland-dotfiles/technician2.sh
+# to run
+~/.config/hyprland-dotfiles/technician.sh
+~/.config/hyprland-dotfiles/technician2.sh
 ```
-Note: put all the wallpapers from `All_Wallpapers` to `Picture/Wallpapers` to match the path in `hypr/scripts/wallpaper-yazi.sh`
+Note: put all the wallpapers from `Wallpapers` to `Picture/Wallpapers` to match the path in `hypr/scripts/wallpaper-yazi.sh`
       for live wallpaper put your wallpapers in `Video/LiveWallpapers` to match the path in `hypr/script/live-wallpaper-yazi.sh` (repo doesn't include live wallpaper because of there file size)
 
 ## 🔧 Key Features
