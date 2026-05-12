@@ -6,12 +6,12 @@
 
 #### `hypr/` - Hyprland Window Manager
 Main Hyprland configuration files and scripts.
-- **`hyprland.conf`** - Primary Hyprland configuration
+- **`hyprland.lua`** - Primary Hyprland configuration
 - **`modules/`** conf for hyprland
-  - `animations.conf` - Hyprland animation
-  - `autostart.conf` - exec-once
-  - `keybinds.conf` - All the hyprland keybind
-  - `windowrules.conf` - All hyprland window rules
+  - `animations.lua` - Hyprland animation
+  - `autostart.lua` - exec-once
+  - `keybinds.lua` - All the hyprland keybind
+  - `windowrules.lua` - All hyprland window rules
 - **`hyprlock.conf`** - Login/lock screen configuration
 - **`hyprpaper.conf`** - Wallpaper configuration
 - **`scripts/`** - Utility scripts
