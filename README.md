@@ -1,5 +1,7 @@
 # The Greatest Technician That Ever Lived Hyprland Dotfiles
 
+[![FUll RICE VIDEO](https://i.postimg.cc/0NV198zZ/thum-Photoroom-(1).png)](https://youtu.be/MJM76iE4InI)    
+
 ## 📁 Directory Structure
 
 ### Core Components
